@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: EnemyArcher
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Archer(PlayerWarrior)
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(229.88092,-1232.63818)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(3.69644165,108.005249)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(0,290)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"MergeAndFight.Fight.FindTargetsBehavior","NodeData":{"Offset":"(-180,340)"},"ID":3,"Name":"Find
+        Targets Behavior","Instant":true,"SharedFloat_maxDistanceForFind":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_followDistance","IsShared":true,"SinglemValue":99},"SharedTransform_findedTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"_enemyTransform","IsShared":true},"TypeDetectableTarget_typeTarget":"Player"},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(284.706055,272.268982)"},"ID":4,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(7.64732361,131.1767)"},"ID":5,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"MergeAndFight.Fight.GetterDistance","NodeData":{"Offset":"(-531.249939,130)"},"ID":6,"Name":"Getter
+        Distance","Instant":true,"SharedTransform_target":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"_enemyTransform","IsShared":true},"SharedVector3_totalTargetPoint":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"_totalTargetPoint","IsShared":true,"Vector3mValue":"(0,0,0)"},"SharedFloat_currentDistance":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_currentDistanceInspector","IsShared":true,"SinglemValue":0}},{"Type":"MergeAndFight.Fight.CheckTargetIsNull","NodeData":{"Offset":"(-135.0622,125.334534)"},"ID":7,"Name":"Check
+        Target Is Null","Instant":true,"SharedTransform_target":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"_enemyTransform","IsShared":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.FloatComparison","NodeData":{"Offset":"(34.6105881,128.873856)"},"ID":8,"Name":"Float
+        Comparison","Instant":true,"Operationoperation":"LessThan","SharedFloatfloat1":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_currentDistanceInspector","IsShared":true,"SinglemValue":0},"SharedFloatfloat2":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_attackDistance","IsShared":true,"SinglemValue":50}},{"Type":"MergeAndFight.Fight.AttackBehavior","NodeData":{"Offset":"(263.333,139.847473)"},"ID":9,"Name":"Attack
+        Behavior","Instant":true,"SharedTransform_target":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"_enemyTransform","IsShared":true},"SharedVector3_totalTargetPoint":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"_totalTargetPoint","IsShared":true,"Vector3mValue":"(0,0,0)"},"SharedFloat_attackDistanceInScript":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_attackDistance","IsShared":true,"SinglemValue":50},"SharedFloat_currentDistanceInScript":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_currentDistanceInspector","IsShared":true,"SinglemValue":0},"Single_delayBetweenAttack":3,"Single_rotationSpeed":9}]}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"_enemyTransform","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_attackDistance","IsShared":true,"SinglemValue":50},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_followDistance","IsShared":true,"SinglemValue":99},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"_currentDistanceInspector","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"_totalTargetPoint","IsShared":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"_totalTargetPointInInspector","IsShared":true,"Vector3mValue":"(0,0,0)"}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.2
